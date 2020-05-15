@@ -146,6 +146,7 @@ nav{
 
 #showcase>div{
   background:hsla(192, 100%, 96%, 0.753);
+  padding: 10px;
 }
 .showcase-body{
   display: flex;
@@ -167,7 +168,30 @@ nav{
   flex-basis: 70%;
   padding: 20px;
 }
+@media screen and (max-width:900px){
+  .logo{
+    height: 20px;
+  }
+  
+  #showcase{
+    background: url('images/bg-hero-desktop.svg') no-repeat center center /cover;
+  }
 
+  #showcase>div{
+    padding: 10px;
+  }
+
+  .showcase-body{
+    text-align: center;
+    display: inline-block;
+    padding: 50px 10px 0px 10px;
+  }
+  
+  .showcase-body img{
+    max-width: 100%;
+    padding: 40px 10px;
+  }
+}
 @media screen and (max-width:500px){
 
   .logo{
@@ -238,6 +262,12 @@ nav{
   order: 1;
 }
 
+@media screen and (max-width:900px){
+
+  #features>.container{
+    padding: 15px;
+  }
+}
 @media screen and (max-width:500px){
 
   #features>.container{
@@ -345,6 +375,23 @@ footer p{
 
 .copyright{
   text-align: right;
+}
+
+@media screen and (max-width:900px){
+  footer p{
+    font-weight: 300;
+  }
+
+  footer>div>div{
+    padding: 40px;
+    padding-top: 150px;
+  }
+
+  .copyright{
+    text-align: center;
+    font-size: 14px;
+  }
+
 }
 
 @media screen and (max-width:500px){
