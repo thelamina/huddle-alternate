@@ -51,6 +51,7 @@ p {
 a{
   text-decoration: none;
   font-weight: 600;
+  color: var(--Very-Pale-Cyan);
 }
 
 /* BUTTON */
@@ -121,7 +122,7 @@ nav{
 /* FEATURES */
 
 #features>div{
-
+  margin-bottom: 100px;
 }
 
 .item{
@@ -158,11 +159,53 @@ nav{
 }
 /* END OF FEATURES */
 
-/* Foooter */
 
+/* CALL TO ACTION */
+#call-to-action{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: -50px;
+  position: sticky;
+}
+
+#call-to-action div{
+  background: #ffffff;
+  display: inline-block;
+  padding: 50px;
+  border: none;
+  text-align: center;
+  box-shadow: -2px -2px 2px 2px var(--Very-Pale-Cyan), 2px 2px 2px 0px var(--Very-Pale-Cyan);
+  border-radius: 15px;
+}
+/* END OF CALL TO ACTION */
+
+/* Foooter */
 footer{
   background: var(--Very-Dark-Cyan);
   color: var(--Very-Pale-Cyan);
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer ul li a{
+  font-weight: 300;
+}
+
+footer>div>div{
+  padding: 40px;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+  justify-items: center;
+}
+
+footer p{
+  font-weight: 300;
 }
 
 .attribution {
@@ -172,4 +215,8 @@ footer{
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.copyright{
+  text-align: right;
 }
